@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+   
+      h4 {
+    margin-bottom: 6px;
+  }
+
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .container {
+        background-color: #343a40;
+        color: cornsilk;
+        height: 180px;
+        border-radius: 20px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .card {
+  display: flex;
+  flex-direction: column; /* stack content vertically */
+}
+
+.card-body {
+  flex: 1 1 auto;       /* makes card-body take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes button to bottom */
+}
+
+    .card-img-top {
+        width: 100%;
+        height: 160px;        /* control card image height */
+        object-fit: cover;   /* THIS fills the card */
+        border-top-left-radius: 0.375rem;
+        border-top-right-radius: 0.375rem;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        transition: 0.3s;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .page-title {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        color: #ffffff;
+        padding-top: 25px;
+    }
+    .card-text {
+        font-size: 0.9rem;
+        color: #495057;
+    }
+    .btn-primary {
+        background-color: #212529;
+        border: none;
+    }
+    .btn-primary:hover {
+        background-color: #343a40;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page Title -->
+  <div class="container my-2 text-center">
+    <h1 class="page-title poppins-medium">Banu's Blog</h1>
+    <h4>Fragments of a warrior</h4>
+    <p class="mt-3 m-0 poppins-regular">Explore my thoughts, projects, experiences, and creativity.</p>
+  </div>
+
+  <!-- Blog Categories Cards -->
+  <div class="container-body my-5 px-4">
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Tech card-->
+      <div class="col-sm-6 col-md-4 col-lg-2"> 
+        <div class="card h-100 text-center shadow-sm">
+          <img src="Assets/coding.jpg" class="card-img-top" alt="Tech Icon">
+          <div class="card-body">
+            <h5 class="card-title">Tech Projects</h5>
+            <p class="card-text">Coding projects, tutorials, and tech experiments.</p>
+            <a href="projects.html" class="btn btn-primary">View Posts</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Journey Journal Card -->
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="assets/karateCup.jpeg" class="card-img-top zoom-img" alt="Achievements Icon">
+          <div class="card-body">
+            <h5 class="card-title">Journey Journal</h5>
+            <p class="card-text">Volunteering, hosting, trophies, and certificates.</p>
+            <a href="journeyJournal.html" class="btn btn-primary">View Posts</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Creative Corner Card -->
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="assets/creativeCorner.jpeg" class="card-img-top" alt="Creative Icon">
+          <div class="card-body">
+            <h5 class="card-title">Creative Corner</h5>
+            <p class="card-text">Poems, lyrics, sketches, and photography.</p>
+            <a href="creative.html" class="btn btn-primary">View Posts</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Opinions / Analysis Card -->
+      <div class="col-sm-6 col-md-4 col-lg-2">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="assets/thinkingStatue.jpg" class="card-img-top" alt="Opinion Icon">
+          <div class="card-body">
+            <h5 class="card-title">Opinions / Analysis</h5>
+            <p class="card-text">Tech trends, criminology insights, and life reflections.</p>
+            <a href="opinions.html" class="btn btn-primary mb-4">View Posts</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div id="privateCard" style="display:none;"> -->
+  <!-- Your Personal Interests Card -->
+  <div class="col-sm-6 col-md-4 col-lg-2">
+    <div class="card h-100 text-center shadow-sm">
+      <img src="assets/blackhole.jpg" class="card-img-top" alt="Insights Icon">
+      <div class="card-body">
+        <h5 class="card-title">Black hole</h5>
+        <p class="card-text">Hobbies, passions, future plans and favorite things</p>
+        <a href="myVibesPersonal.html" class="btn btn-primary mb-4">View Posts</a>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
+
+</div>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<script>
+  const password = prompt("Enter secret key to access this page:");
+  if(password !== "5598") {
+    alert("Wrong key! Access denied.");
+    window.location.href = "index.html"; // redirect back
+  }
+</script>
+
+</html>

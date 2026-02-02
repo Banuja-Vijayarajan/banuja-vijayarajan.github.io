@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journey Journal | Banu's Blog</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f1115;
+      color: #eaeaea;
+    }
+
+    .page-title {
+      text-align: center;
+      margin-top: 40px;
+      font-weight: 700;
+    }
+
+    .page-subtitle {
+      text-align: center;
+      color: #9aa0a6;
+      margin-bottom: 60px;
+    }
+
+    .page-header {
+  display: block;       /* shrink-wrap to content */
+  width: 100%;
+  padding: 16px 24px;
+  background: linear-gradient(145deg, #16181d, #121417);
+  border: 1px solid #ffcc66;  /* your highlight color */
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  margin: 0;
+  color: #ffcc66;              /* heading color */
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.page-header p {
+  margin: 6px 0 0 0;
+  color: #ffffff;              /* subtitle color */
+  font-size: 1rem;
+}
+
+
+    .year-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 70px 0 35px;
+      border-left: 5px solid #ffcc66;
+      padding-left: 15px;
+      color: #ffffff;
+    }
+
+    /* ===== Journal Entry ===== */
+    section.journal-entry {
+  background: linear-gradient(145deg, #16181d, #121417);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+    section.journal-entry:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.75);
+    }
+
+    .entry-date {
+      font-size: 0.85rem;
+      color: #ffffff;
+      font-weight: 500;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .entry-title {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #ffcc66;
+    }
+
+    .entry-text {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #cfd3d8;
+      margin-bottom: 14px;
+    }
+
+    /* ===== Gallery ===== */
+    .gallery-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .gallery-viewport {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .gallery-track {
+      display: flex;
+      gap: 16px;
+      transition: transform 0.4s ease;
+    }
+
+    .entry-img {
+      width: 100%;
+      height: 220px;
+      max-width: 280px; /* adjust if needed */
+      object-fit: cover;
+      border-radius: 10px;
+      flex-shrink: 0;
+      background-color: #000;
+    }
+
+    .gallery-btn {
+      background: rgba(0, 0, 0, 0.6);
+      border: none;
+      color: #ffcc66;
+      font-size: 22px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .gallery-btn.hidden {
+      display: none;
+    }
+
+    .gallery-btn:hover {
+      background: rgba(0, 0, 0, 0.85);
+    }
+
+    .highlight {
+  color: #ffcc66;
+  font-weight: 600; /* optional, makes it pop a bit */
+}
+
+  </style>
+</head>
+
+
+<body>
+<div class="container">
+  <div class="page-header">
+  <h1 class="page-title">Journey Journal</h1>
+  <p class="page-subtitle">Moments, milestones, and memories across the years</p>
+</div>
+
+  <!-- ===== 2026 ===== -->
+  <h2 class="year-title">2026</h2>
+
+  <section class="journal-entry">
+  <span class="entry-date">10th January 2026</span>
+  <h3 class="entry-title">IEEE Andaharaya</h3>
+  <img src="assets/ieeextreme-19.jpg" alt="Andaharaya" class="entry-img">
+  <p class="entry-text">
+At IEEE Andaharaya 2026, I served as a <span class="highlight">Finance Team Member</span>, collaborating closely with the RUSL Finance Team. The event featured Mr. Manodya Nabadawewa, SAC Chair, as a Power Speaker, offering an inspiring session filled with energy, insight, and ideas. It was a vibrant celebration of talent, culture, and the IEEE spirit, held at <span class="highlight">Rajarata University of Sri Lanka</span> on 10th January 2026.
+</p>
+</section>
+  
+  <!-- ===== 2025 ===== -->
+  <h2 class="year-title">2025</h2>
+
+  <section class="journal-entry">
+  <span class="entry-date">25th-26th October 2025</span>
+  <h3 class="entry-title">IEEE Xtreme 19.0</h3>
+  <img src="assets/ieeextreme-19.jpg" alt="IEEE Xtreme 19.0" class="entry-img">
+  <p class="entry-text">
+    I participated in IEEE Xtreme 19.0 as both a <span class="highlight">competitor</span> and a <span class="highlight">Secretary Team Member</span> in the organizing committee. As part of the OC, I created permission letters, event reports, and VC reports to ensure smooth execution. Competitively, I joined the 24-hour coding challenge with my team, <span class="highlight">Runtime3xception</span>, marking <span class="highlight">my second consecutive year</span>. The experience taught me invaluable lessons about teamwork, problem-solving under pressure, and understanding people, making it an unforgettable journey of growth and coding endurance.
+  </p>
+</section>
+
+  <section class="journal-entry">
+  <span class="entry-date">11th October 2025</span>
+  <h3 class="entry-title">IEEE Day</h3>
+  <img src="assets/ieee-day.jpg" alt="IEEE Day 2025" class="entry-img">
+  <p class="entry-text">
+    IEEE Day 2025 was celebrated at the University of Vavuniya on 11th October. I contributed as a <span class="highlight">Finance Team Member</span>, designing partnership proposals, reaching out to sponsors, and successfully securing sponsorship for the event. This experience enriched my skills in professional communication, corporate engagement, and event planning, providing valuable insight into working with companies and managing financial collaborations.
+  </p>
+</section>
+
+  <section class="journal-entry">
+  <span class="entry-date">8th October 2025</span>
+  <h3 class="entry-title">IEEE Student Branch AGM</h3>
+  <img src="assets/ieee-agm.jpg" alt="IEEE AGM 2025" class="entry-img">
+  <p class="entry-text">
+    The Annual General Meeting of the IEEE Student Branch of the University of Vavuniya was held on 8th October 2025. I had the honor of being appointed as the <span class="highlight">Public Visibility Team Lead</span>, responsible for ensuring the branch's activities and achievements were effectively communicated across platforms. This role allowed me to showcase leadership, coordinate publicity efforts, and contribute to the professional presentation of our branch during this key event.
+  </p>
+</section>
+
+  <section class="journal-entry">
+  <span class="entry-date">23rd August 2025</span>
+  <h3 class="entry-title">JamborIEEE</h3>
+
+  <div class="gallery-wrapper">
+    <button class="gallery-btn left" onclick="slideGalleryJune(-1)">&#10094;</button>
+    <div class="gallery-viewport">
+      <div class="gallery-track" id="june-gallery">
+        <img src="assets/jumborIEEE(2).jpeg" class="entry-img" alt="jumborIEEE 2025 2">
+        <img src="assets/jumborIEEE(3).jpeg" class="entry-img" alt="jumborIEEE 2025 3">
+        <img src="assets/jumborIEEE(4).jpeg" class="entry-img" alt="jumborIEEE 2025 4">
+        <img src="assets/jumborIEEE(5).jpeg" class="entry-img" alt="jumborIEEE 2025 5">
+        <img src="assets/jumborIEEE(6).jpeg" class="entry-img" alt="jumborIEEE 2025 6">
+        <img src="assets/jumborIEEE(7).jpeg" class="entry-img" alt="jumborIEEE 2025 7">
+        <img src="assets/jumborIEEE(8).jpeg" class="entry-img" alt="jumborIEEE 2025 8">
+        <img src="assets/jumborIEEE(1).jpeg" class="entry-img" alt="jumborIEEE 2025 1">
+        <img src="assets/jumborIEEE(9).jpeg" class="entry-img" alt="jumborIEEE 2025 9">
+        <img src="assets/jumborIEEE(10).jpeg" class="entry-img" alt="jumborIEEE 2025 10">
+      </div>
+    </div>
+    <button class="gallery-btn right" onclick="slideGalleryJune(1)">&#10095;</button>
+  </div>
+
+  <p class="entry-text">
+At IEEE Andaharaya 2025, I attended as a <span class="highlight">delegate</span>, joining participants from six universities: <span class="highlight">UOV</span>, <span class="highlight">UOJ</span>, <span class="highlight">UOM</span>, <span class="highlight">SLIIT</span>, <span class="highlight">UoVT</span>, and <span class="highlight">RUSL</span>. The event featured Mr. Manodya Nabadawewa, SAC Chair, as a Power Speaker, delivering an inspiring session filled with energy, insight, and ideas. Despite the focus on technology and innovation, the experience was also <span class="highlight">fun and memorable</span>, celebrating talent, culture, and the vibrant IEEE spirit at <span class="highlight">Rajarata University of Sri Lanka</span> on 10th January 2026.
+</p>
+</section>
+
+  <section class="journal-entry">
+  <span class="entry-date">2nd August 2025</span>
+  <h3 class="entry-title">Spogomi World Cup 2025 – Qualifier round</h3>
+
+  <div class="gallery-wrapper">
+    <button class="gallery-btn left" onclick="slideGalleryJune(-1)">&#10094;</button>
+    <div class="gallery-viewport">
+      <div class="gallery-track" id="june-gallery">
+        <img src="assets/spogomi(1).jpeg" class="entry-img" alt="spogomi worldcup 2025 1">
+        <img src="assets/spogomi(2).jpeg" class="entry-img" alt="spogomi worldcup 2025 2">
+        <img src="assets/spogomi(3).jpeg" class="entry-img" alt="spogomi worldcup 2025 3">
+        <!-- <img src="assets/spogomi(4).jpeg" class="entry-img" alt="spogomi worldcup 2025 4"> -->
+        <img src="assets/spogomi(5).jpeg" class="entry-img" alt="spogomi worldcup 2025 5">
+        <img src="assets/spogomi(6).jpeg" class="entry-img" alt="spogomi worldcup 2025 6">
+        <img src="assets/spogomi(7).jpeg" class="entry-img" alt="spogomi worldcup 2025 7">
+        <img src="assets/spogomi(8).jpeg" class="entry-img" alt="spogomi worldcup 2025 8">
+      </div>
+    </div>
+    <button class="gallery-btn right" onclick="slideGalleryJune(1)">&#10095;</button>
+  </div>
+
+  <p class="entry-text">
+    I had the honor of serving as the <span class="highlight">Delegates Coordinator</span> for the University of Vavuniya at the Spogomi World Cup 2025. Being part of the organizing committee offered an incredible opportunity to contribute to an event that celebrates teamwork, sportsmanship, and global collaboration.
+  </p>
+</section>
+
+
+  <section class="journal-entry">
+  <span class="entry-date">26th June 2025</span>
+  <h3 class="entry-title">IEEE SLI Career compass </h3>
+
+  <div class="gallery-wrapper">
+    <button class="gallery-btn left" onclick="slideGalleryJune(-1)">&#10094;</button>
+    <div class="gallery-viewport">
+      <div class="gallery-track" id="june-gallery">
+        <img src="assets/careerCompass(1).jpeg" class="entry-img" alt="Judging Panel Snapshot 1">
+        <img src="assets/careerCompass(2).jpeg" class="entry-img" alt="Judging Panel Snapshot 2">
+        <img src="assets/careerCompass(3).jpeg" class="entry-img" alt="Judging Panel Snapshot 3">
+        <img src="assets/careerCompass(4).jpeg" class="entry-img" alt="Judging Panel Snapshot 4">
+      </div>
+    </div>
+    <button class="gallery-btn right" onclick="slideGalleryJune(1)">&#10095;</button>
+  </div>
+
+  <p class="entry-text">
+    I had the privilege of serving as <span class="highlight">one of the speakers</span> at IEEE SLI Career Compass 2025, an inspiring educational outreach organized by the IEEE Student Branch of the University of Vavuniya, in collaboration with IEEE SL Inspire. The event connected me with <span class="highlight">over 150 enthusiastic students</span> and teachers from three schools, where I guided them in navigating their A/L subject selections, university pathways, and government-supported educational opportunities. 
+  
+    This experience was deeply rewarding, empowering young minds, fueling ambition, and bridging the gap between dreams and direction.
+  </p>
+</section>
+
+
+  <section class="journal-entry">
+  <span class="entry-date">31st May 2025</span>
+  <h3 class="entry-title">HNB Best Speaker Contest (North-East Region)</h3>
+
+  <div class="gallery-wrapper">
+    <button class="gallery-btn left" onclick="slideGalleryJune(-1)">&#10094;</button>
+
+    <div class="gallery-viewport">
+      <div class="gallery-track" id="june-gallery">
+        <img src="assets/hnbGavel(1).jpeg" class="entry-img" alt="hnbGavel 1">
+        <img src="assets/hnbGavel(2).jpeg" class="entry-img" alt="hnbGavel 2">
+        <img src="assets/hnbGavel(3).jpeg" class="entry-img" alt="hnbGavel 3">
+        <img src="assets/hnbGavel(4).jpeg" class="entry-img" alt="hnbGavel 4">
+      </div>
+    </div>
+
+    <button class="gallery-btn right" onclick="slideGalleryJune(1)">&#10095;</button>
+  </div>
+  <p class="entry-text">
+    On 31st May 2025, I had the honor of being <span class="highlight">on the judging panel</span> for the HNB Best Speaker Contest – North-East Region, organized in collaboration with the <span class="highlight">Toastmasters Club of Vavuniya</span>. I contributed in multiple capacities, including serving as the Sergeant-at-Arms, ensuring stage readiness, discipline, and smooth execution throughout the event, and representing the <span class="highlight">Gavel Club of the University of Vavuniya</span> by leading our student judging delegation.  
+
+    This experience provided exposure to elite public speaking talent, hands-on learning in event coordination, role-based responsibility, judging protocol, and professional collaboration. It was both empowering and rewarding to work alongside Toastmasters and Gavel members, fostering growth, shared learning, and a celebration of effective communication.  
+
+    I am grateful to TM Arulneethan Sir for initiating the collaboration, TM M.I. Shamilah Madam for her guidance and support, and TM Edward Sir for mentorship and energetic leadership throughout the program. Events like this reaffirm the power of shared platforms, voices, and growth, leaving a lasting impression and inspiring many more stages, stories, and speaking moments ahead.
+</p>
+
+</section>
+
+  <section class="journal-entry">
+  <span class="entry-date">24th May 2025</span>
+  <h3 class="entry-title">Awurudhu Dance Performance</h3>
+
+  <div class="gallery-wrapper">
+    <button class="gallery-btn left" onclick="slideGalleryAwurudhu(-1)">&#10094;</button>
+
+    <div class="gallery-viewport">
+      <div class="gallery-track" id="awurudhu-gallery">
+        <img src="assets/dance(1).jpeg" class="entry-img" alt="Awurudhu Dance Snapshot 1">
+        <img src="assets/dance(2).jpeg" class="entry-img" alt="Awurudhu Dance Snapshot 2">
+        <img src="assets/dance(3).jpeg" class="entry-img" alt="Awurudhu Dance Snapshot 3">
+        <img src="assets/dance(4).jpeg" class="entry-img" alt="Awurudhu Dance Snapshot 4">
+        <img src="assets/dance(5).jpeg" class="entry-img" alt="Awurudhu Dance Snapshot 4" style="object-fit:contain;">
+        <img src="assets/dance(6).jpeg" class="entry-img" alt="Awurudhu Dance Snapshot 4">
+      </div>
+    </div>
+
+    <button class="gallery-btn right" onclick="slideGalleryAwurudhu(1)">&#10095;</button>
+  </div>
+
+  <p class="entry-text">
+    During my first year at the University of Vavuniya, I had the wonderful opportunity to participate in the Awurudhu dance performance on 24th May 2025. The event celebrated the vibrant traditions and cultural heritage of the <span class="highlight">New Year festival</span>, bringing together students from various faculties in a lively and colorful performance.  
+
+    Being part of this dance allowed me to connect with my peers, embrace the spirit of teamwork, and contribute to a memorable celebration that highlighted creativity, energy, and cultural pride. It was an exciting experience that balanced performance, coordination, and joyful expression, making my first-year cultural involvement truly special.
+  </p>
+</section>
+
+  <section class="journal-entry">
+  <span class="entry-date">26th April 2025</span>
+  <h3 class="entry-title">DevSprint 2025</h3>
+
+  <div class="gallery-wrapper">
+    <button class="gallery-btn left" onclick="slideGalleryDevSprint(-1)">&#10094;</button>
+
+    <div class="gallery-viewport">
+      <div class="gallery-track" id="devsprint-gallery">
+        <img src="assets/devsprint(1).jpeg" class="entry-img" alt="DevSprint 2025 Snapshot 1">
+        <img src="assets/devsprint(2).jpeg" class="entry-img" alt="DevSprint 2025 Snapshot 2">
+        <img src="assets/devsprint(3).jpeg" class="entry-img" alt="DevSprint 2025 Snapshot 3">
+        <img src="assets/devsprint(4).jpeg" class="entry-img" alt="DevSprint 2025 Snapshot 4">
+        <img src="assets/devsprint(5).jpeg" class="entry-img" alt="DevSprint 2025 Snapshot 5">
+        <img src="assets/devsprint(6).jpeg" class="entry-img" alt="DevSprint 2025 Snapshot 6">
+        <img src="assets/devsprint(7).jpeg" class="entry-img" alt="DevSprint 2025 Snapshot 7">
+        <img src="assets/devsprint(8).jpeg" class="entry-img" alt="DevSprint 2025 Snapshot 8">
+      </div>
+    </div>
+
+    <button class="gallery-btn right" onclick="slideGalleryDevSprint(1)">&#10095;</button>
+  </div>
+
+  <p class="entry-text">
+    DevSprint 2025 was an exhilarating <span class="highlight">tech sprint</span> that brought together students, innovators, and experts from across the tech community. I had the privilege of volunteering as the <span class="highlight">Secretary Team Lead</span>, overseeing documentation, agendas, and overall coordination alongside my amazing team members.  
+
+    The event featured three immersive tracks: <span class="highlight">Cloud Computing</span>, <span class="highlight">Mobile App Development</span>, and <span class="highlight">Artificial Intelligence</span>, with speakers from the <span class="highlight">GitHub community Sri Lanka</span> sharing valuable insights and practical knowledge. Working closely with Chamodi Indrejith provided guidance that made this journey even more enriching.  
+
+    This experience strengthened my organizational, leadership, and teamwork skills while offering an incredible opportunity to connect with like-minded tech enthusiasts. The energy, passion, and knowledge shared during the sessions made DevSprint an unforgettable milestone in my 2025 journey.
+  </p>
+</section>
+
+
+  <section class="journal-entry">
+    <span class="entry-date">7th April 2025</span>
+    <h3 class="entry-title">FAS Week & FAS night </h3>
+
+    <div class="gallery-wrapper">
+      <button class="gallery-btn left">&#10094;</button>
+      <div class="gallery-viewport">
+        <div class="gallery-track">
+          <img src="assets/fasWeek(1).jpeg" class="entry-img">
+          <img src="assets/fasWeek(2).jpeg" class="entry-img">
+          <img src="assets/fasWeek(3).jpeg" class="entry-img">
+          <img src="assets/fasWeek(4).jpeg" class="entry-img">
+          <img src="assets/fasWeek(5).jpeg" class="entry-img">
+          <img src="assets/fasWeek(6).jpeg" class="entry-img">
+          <img src="assets/fasWeek(7).jpeg" class="entry-img">
+          <img src="assets/fasWeek(8).jpeg" class="entry-img">
+          <img src="assets/fasWeek(9).jpeg" class="entry-img">
+          <img src="assets/fasWeek(10).jpeg" class="entry-img">
+          <img src="assets/fasWeek(11).jpeg" class="entry-img">
+          <img src="assets/fasWeek(12).jpeg" class="entry-img">
+        </div>
+      </div>
+      <button class="gallery-btn right">&#10095;</button>
+    </div>
+
+    <p class="entry-text">
+      During FAS Week on 7th April, I competed in <span class="highlight">Kumite below 61 kg</span> and secured <span class="highlight">2nd place</span>. As a first-year student, I faced my faculty seniors, making the experience both challenging and rewarding.
+    </p>
+  </section>
+
+  <section class="journal-entry">
+    <span class="entry-date">5th March 2025</span>
+    <h3 class="entry-title">Oratosphere</h3>
+
+    <div class="gallery-wrapper">
+      <button class="gallery-btn left">&#10094;</button>
+      <div class="gallery-viewport">
+        <div class="gallery-track">
+          <img src="assets/oratosphere(1).jpeg" class="entry-img">
+          <img src="assets/oratosphere(2).jpeg" class="entry-img" style="object-fit:contain;">
+          <img src="assets/oratosphere(4).jpeg" class="entry-img">
+          <img src="assets/oratosphere(3).jpeg" class="entry-img">
+        </div>
+      </div>
+      <button class="gallery-btn right">&#10095;</button>
+    </div>
+
+    <p class="entry-text">
+      The Awarding Ceremony of Oratosphere celebrated the power of expression, bringing together voices that challenged ideas and inspired meaningful dialogue. Organized by the <span class="highlight">Gavel Club of the University of Vavuniya</span>, the event honored impactful speakers whose words ignited thought and conversation. Behind the scenes, I contributed as a <span class="highlight">logistics team member</span>, supporting coordination and execution to ensure the ceremony flowed seamlessly.
+    </p>
+  </section>
+
+  <section class="journal-entry">
+    <span class="entry-date">17th January 2025</span>
+    <h3 class="entry-title">Interfaculty Freshers' Meet</h3>
+
+    <div class="gallery-wrapper">
+      <button class="gallery-btn left">&#10094;</button>
+      <div class="gallery-viewport">
+        <div class="gallery-track">
+          <img src="assets/freshers(1).jpeg" class="entry-img">
+          <img src="assets/freshers(2).jpeg" class="entry-img">
+          <img src="assets/freshers(4).jpeg" class="entry-img">
+          <img src="assets/freshers(5).jpeg" class="entry-img">
+          <img src="assets/freshers(6).jpeg" class="entry-img">
+          <img src="assets/freshers(7).jpeg" class="entry-img">
+          <img src="assets/freshers(3).jpeg" class="entry-img">
+        </div>
+      </div>
+      <button class="gallery-btn right">&#10095;</button>
+    </div>
+
+    <p class="entry-text">
+  The Inter Faculty Freshers Championship 2025 Karate showcased discipline, strength, and sportsmanship at the University of Vavuniya. Three faculties competed: <span class="highlight">Applied Science</span>, <span class="highlight">Business Studies</span>, and <span class="highlight">Technological Studies</span>. Representing Applied Science in the <span class="highlight">under 50kg Kumite</span> category, I won <span class="highlight">1st place</span> and <span class="highlight">3rd place</span> in <span class="highlight">Kata</span>, demonstrating both technique and fighting spirit. Proudly, our Faculty of Applied Science secured the Women’s Championship Cup, with three of us contributing to this achievement.
+</p>
+  </section>
+
+  <section class="journal-entry">
+    <span class="entry-date">11th January 2025</span>
+    <h3 class="entry-title">Alohomora</h3>
+
+    <div class="gallery-wrapper">
+      <button class="gallery-btn left">&#10094;</button>
+      <div class="gallery-viewport">
+        <div class="gallery-track">
+          <img src="assets/alohomora(1).jpeg" class="entry-img">
+          <img src="assets/alohomora(2).jpeg" class="entry-img">
+          <img 
+            src="assets/alohomora(3).jpeg"
+            class="entry-img"
+            style="object-fit:contain;">
+        </div>
+      </div>
+      <button class="gallery-btn right">&#10095;</button>
+    </div>
+
+    <p class="entry-text">
+  The <span class="highlight">Welcome Function 2025</span> at the University of Vavuniya was themed “Alohomora — A Harry Potter Experience.” This event was organized by our direct seniors, who also put on amazing dance performances. 
+</p>
+  </section>
+
+  <!-- ===== 2024 ===== -->
+  <h2 class="year-title">2024</h2>
+
+  <section class="journal-entry">
+    <span class="entry-date">11th December 2024</span>
+    <h3 class="entry-title">Gaudiam Natalis</h3>
+
+    <div class="gallery-wrapper">
+      <button class="gallery-btn left">&#10094;</button>
+      <div class="gallery-viewport">
+        <div class="gallery-track">
+          <img src="assets/carols(1).jpeg" class="entry-img">
+          <img src="assets/carols(2).jpeg" class="entry-img">
+          <img src="assets/carols(3).jpeg" class="entry-img">
+          <img src="assets/carols(4).jpeg" class="entry-img">
+          <img src="assets/carols(5).jpeg" class="entry-img">
+        </div>
+      </div>
+      <button class="gallery-btn right">&#10095;</button>
+      </div>
+
+    <p class="entry-text">
+      Participated in Gaudiam Natalis, the University <span class="highlight">Christmas celebration</span>, on 11th December 2024, performing <span class="highlight">carol singing</span>. It was a joyful experience blending creativity, community, and tradition.
+    </p>
+  </section>
+
+  <section class="journal-entry">
+    <span class="entry-date">4th December 2024</span>
+    <h3 class="entry-title">Python Unplugged</h3>
+
+    <div class="gallery-wrapper">
+      <button class="gallery-btn left">&#10094;</button>
+      <div class="gallery-viewport">
+        <div class="gallery-track">
+          <img src="assets/pyUnplugged(2).jpeg" class="entry-img">
+          <img src="assets/pyUnplugged(3).jpeg" class="entry-img">
+          <img src="assets/pyUnplugged(4).jpeg" class="entry-img">
+          <img src="assets/pyUnplugged(5).jpeg" class="entry-img">
+          <img src="assets/pyUnplugged(1).jpeg" class="entry-img">
+        </div>
+      </div>
+      <button class="gallery-btn right">&#10095;</button>
+    </div>
+
+    <p class="entry-text">
+      This was the <span class="highlight">first event of my IEEE volunteering journey</span>, a <span class="highlight">hands-on Python session</span> featuring Mr. Ayesh Merenchige. As a <span class="highlight">program member</span>, I handled agenda planning, script preparation, and <span class="highlight">hosted the session</span>, ensuring a smooth and engaging experience.
+</p>
+  </section>
+
+  <section class="journal-entry">
+    <span class="entry-date">26-27th October 2024</span>
+    <h3 class="entry-title">IEEE Xtreme 18.0</h3>
+
+    <div class="gallery-wrapper">
+      <button class="gallery-btn left">&#10094;</button>
+      <div class="gallery-viewport">
+        <div class="gallery-track">
+          <img src="assets/IEEEXtreme18.0(1).jpg" class="entry-img">
+          <img src="assets/IEEEXtreme18.0(2).jpg" class="entry-img">
+          <img src="assets/IEEEXtreme18.0(3).jpg" class="entry-img">
+          <img src="assets/IEEEXtreme18.0(4).jpg" class="entry-img">
+          <img src="assets/IEEEXtreme18.0(5).jpg" class="entry-img">
+          <img src="assets/IEEEXtreme18.0(6).jpg" class="entry-img">
+        </div>
+      </div>
+      <button class="gallery-btn right">&#10095;</button>
+    </div>
+
+    <p class="entry-text">
+      As a <span class="highlight">first-year solo competitor</span>, I scored 348.96 points in this 24-hour coding challenge. The experience pushed my problem-solving and endurance skills, allowed me to learn from seniors, and built meaningful connections.
+    </p>
+  </section>
+
+</div>
+
+<script>
+document.querySelectorAll('.gallery-wrapper').forEach(wrapper => {
+  const track = wrapper.querySelector('.gallery-track');
+  const leftBtn = wrapper.querySelector('.left');
+  const rightBtn = wrapper.querySelector('.right');
+
+  let images = Array.from(track.children);
+
+  const firstClone = images[0].cloneNode(true);
+  const lastClone = images[images.length - 1].cloneNode(true);
+
+  track.appendChild(firstClone);
+  track.insertBefore(lastClone, images[0]);
+
+  images = Array.from(track.children);
+
+  let index = 1;
+
+  const getStep = () => {
+    const img = images[0];
+    const gap = parseInt(getComputedStyle(track).gap) || 0;
+    return img.offsetWidth + gap;
+  };
+
+  track.style.transform = `translateX(-${index * getStep()}px)`;
+
+  rightBtn.onclick = () => {
+    index++;
+    track.style.transition = 'transform 0.4s ease';
+    track.style.transform = `translateX(-${index * getStep()}px)`;
+
+    if (index === images.length - 1) {
+      setTimeout(() => {
+        track.style.transition = 'none';
+        index = 1;
+        track.style.transform = `translateX(-${index * getStep()}px)`;
+      }, 400);
+    }
+  };
+
+  leftBtn.onclick = () => {
+    index--;
+    track.style.transition = 'transform 0.4s ease';
+    track.style.transform = `translateX(-${index * getStep()}px)`;
+
+    if (index === 0) {
+      setTimeout(() => {
+        track.style.transition = 'none';
+        index = images.length - 2;
+        track.style.transform = `translateX(-${index * getStep()}px)`;
+      }, 400);
+    }
+  };
+
+  window.addEventListener('resize', () => {
+    track.style.transition = 'none';
+    track.style.transform = `translateX(-${index * getStep()}px)`;
+  });
+});
+</script>
+
+
+
+</body>
+</html>
